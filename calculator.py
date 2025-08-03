@@ -8,6 +8,19 @@ import math
 
 
 # First example
+def square_root(a):
+    try:
+        result = math.sqrt(a)
+        return result
+    except ValueError:
+        return 0
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
+
+
+
+
 def add(a, b): 
     return a + b
 def sub(a, b):
@@ -19,9 +32,9 @@ def div(a, b):
         raise ZeroDivisionError
     return b / a
 def log(a, b):
-    if a <= 0:
+    if b <= 0:
         raise ValueError
-    return math.log(a, b)
+    return math.log(b, a)
 def exp(a, b):
     return a ** b
 
