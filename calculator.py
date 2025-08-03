@@ -29,7 +29,8 @@ def square_root(a):
         result = math.sqrt(a)
         return result
     except ValueError:
-        return 0
+        raise ValueError
+
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
