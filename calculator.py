@@ -7,7 +7,7 @@ One function per operation, in order.
 
 import math
 
-def add(a, b): 
+def add(a, b):
     return a + b
 
 def sub(a,b):
@@ -22,28 +22,25 @@ def div(a,b):
 
     return b/a
 
-def log(a,b):
-    if b <= 0:
-        raise ValueError
-    return math.log(b,a)
-
-def exp(a,b):
-    return a**b
-
-import math
-
 
 # First example
-def add(a, b): 
-    return a + b
-def sub(a, b):
-    return a - b
-def mul(a, b):
-    return a * b
-def log(a, b):
-    if a <= 0:
+def square_root(a):
+    try:
+        result = math.sqrt(a)
+        return result
+    except ValueError:
         raise ValueError
-    return math.log(a, b)
+
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
+
+
+def log(a, b):
+    if b <= 0 or a==0:
+        raise ValueError
+
+    return math.log(b, a)
 def exp(a, b):
     return a ** b
 
