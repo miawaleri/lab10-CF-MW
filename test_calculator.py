@@ -1,3 +1,7 @@
+# https://github.com/miawaleri/lab10-CF-MW.git
+# Partner 1: Charley Fike
+# Partner 2: Mia Waleri
+
 import unittest
 from encodings import search_function
 
