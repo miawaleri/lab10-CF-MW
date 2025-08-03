@@ -36,7 +36,7 @@ def hypotenuse(a, b):
 
 
 def log(a, b):
-    if b <= 0:
+    if b <= 0 or a==0:
         raise ValueError
 
     return math.log(b, a)
